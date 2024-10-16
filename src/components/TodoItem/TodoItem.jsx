@@ -9,10 +9,10 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
           type="checkbox"
           checked={completed}
           onChange={(e) => toggleTodo(id, e.target.checked)}
+          className="checkbox__icon"
         />
         {title}
       </label>
-      {/* Replace the button with FontAwesomeIcon for the delete icon */}
       <FontAwesomeIcon
         icon={faTrash}
         className="delete__icon"

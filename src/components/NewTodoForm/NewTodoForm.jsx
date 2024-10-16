@@ -14,7 +14,7 @@ export function NewTodoForm({ onSubmit }) {
     <form onSubmit={handleSubmit} className="new__item-form">
       <div className="form__row">
         <label htmlFor="item" className="new__item">
-          New Item
+          New Task
         </label>
         <input
           value={newItem}
