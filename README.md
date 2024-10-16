@@ -24,7 +24,8 @@ I have some ideas for enhancing the app in the future:
 
 ## 🧰 Languages and Tools
 
-- JavaScript
-- React
-- CSS
-- Local Storage
+<p>
+  <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" width="48" height="48"/>
+  <img src="https://img.icons8.com/flat-color/48/000000/react.png" alt="React" width="48" height="48"/>
+  <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" width="48" height="48"/>
+</p>
