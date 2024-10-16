@@ -20,8 +20,7 @@ I have some ideas for enhancing the app in the future:
 
 ## Live Site
 
-[View Todo List App](https://your-live-site-link.com) (replace with the actual link)
-
+[View Todo List App]([https://your-live-site-link.com](https://onurerdinc.github.io/TodoList/)) 
 ## 🧰 Languages and Tools
 
 <p>
