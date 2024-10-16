@@ -5,8 +5,8 @@ export function NewTodoForm({ onSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (newitem === "") return;
-    onsubmit(newItem);
+    if (newItem === "") return;
+    onSubmit(newItem);
     setNewItem("");
   }
 
@@ -23,7 +23,7 @@ export function NewTodoForm({ onSubmit }) {
           id="item"
         ></input>
       </div>
-      <button className="add__button" onSubmit={handleSubmit}>
+      <button type="submit" className="add__button" onSubmit={handleSubmit}>
         Add
       </button>
     </form>

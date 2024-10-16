@@ -12,7 +12,7 @@ export default function App() {
         ...currentTodos,
         {
           id: crypto.randomUUID(),
-          title: newItem,
+          title: title,
           completed: false,
         },
       ];
@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <>
-      <NewTodoForm onsubmit={addTodo} />
+      <NewTodoForm onSubmit={addTodo} />
       <h1 className="header">Todo List</h1>
       <TodoList todos={todos} />
     </>
