@@ -11,13 +11,13 @@ body {
   margin: 0 auto;
 }
 
-.new_item_form {
+.new__item_form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.form_row {
+.form__row {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
@@ -36,6 +36,16 @@ body {
 .button:hover,
 .button:focus-visible {
   background: hsl(200, 100%, 50%, 0.2);
+}
+
+.delete__icon {
+  cursor: pointer;
+  color: black;
+  margin-left: 10px;
+}
+
+.delete__icon:hover {
+  color: darkred;
 }
 
 .button.delete__button {
