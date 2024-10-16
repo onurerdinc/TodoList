@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./index.css";
+import { NewTodoForm } from "./NewTodoForm";
+import { TodoList } from "./TodoList";
 
 export default function App() {
-  const [newItem, setNewItem] = useState("");
   const [todos, setTodos] = useState([]);
-  function handleSubmit(e) {
-    e.preventDefault();
 
+  function addTodo(title) {
     setTodos((currentTodos) => {
       return [
         ...currentTodos,
@@ -39,46 +39,10 @@ export default function App() {
   }
 
   return (
-    <div className="page">
-      <form onSubmit={handleSubmit} className="new__item-form">
-        <div className="form__row">
-          <label htmlFor="item" className="new__item">
-            New Item
-          </label>
-          <input
-            value={newItem}
-            onChange={(e) => setNewItem(e.target.value)}
-            type="text"
-            id="item"
-          ></input>
-        </div>
-        <button className="add__button" onSubmit={handleSubmit}>
-          Add
-        </button>
-      </form>
+    <>
+      <NewTodoForm onsubmit={addTodo} />
       <h1 className="header">Todo List</h1>
-      <ul className="list">
-        {todos.map((todo) => {
-          return (
-            <li key={todo.id}>
-              <label htmlFor="">
-                <input
-                  type="checkbox"
-                  checked={todo.completed}
-                  onChange={(e) => toggleTodo(todo.id, e.target.checked)}
-                />
-                {todo.title}
-              </label>
-              <button
-                className="button delete__button"
-                onClick={() => deleteTodo(todo.id)}
-              >
-                Delete
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+      <TodoList todos={todos} />
+    </>
   );
 }
